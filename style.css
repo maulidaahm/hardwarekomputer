@@ -1,0 +1,176 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #eef4ff;
+  color: #172033;
+}
+
+header {
+  background: #0f172a;
+  color: white;
+  text-align: center;
+  padding: 22px;
+}
+
+header h1 {
+  margin: 0;
+  font-size: 30px;
+}
+
+header p {
+  margin: 8px 0 0;
+  color: #fde68a;
+  font-weight: bold;
+}
+
+main {
+  display: grid;
+  grid-template-columns: 220px 1fr 470px;
+  gap: 18px;
+  padding: 18px;
+  min-height: calc(100vh - 150px);
+}
+
+aside {
+  background: white;
+  padding: 18px;
+  border-radius: 18px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.12);
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+aside button {
+  border: none;
+  background: #2563eb;
+  color: white;
+  padding: 14px;
+  border-radius: 12px;
+  font-weight: bold;
+  cursor: pointer;
+  text-align: left;
+}
+
+aside button:hover {
+  background: #1d4ed8;
+}
+
+.content {
+  background: white;
+  padding: 24px;
+  border-radius: 18px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.12);
+  overflow-y: auto;
+}
+
+.viewer {
+  background: white;
+  padding: 20px;
+  border-radius: 18px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.12);
+}
+
+.page {
+  display: none;
+}
+
+.page.active {
+  display: block;
+}
+
+h2 {
+  color: #1e3a8a;
+  margin-top: 0;
+}
+
+h3 {
+  color: #0f172a;
+}
+
+.soal {
+  background: #f8fafc;
+  border-left: 5px solid #2563eb;
+  padding: 14px;
+  border-radius: 12px;
+  margin-bottom: 14px;
+}
+
+.soal label {
+  display: block;
+  margin: 8px 0;
+}
+
+.cek {
+  background: #16a34a;
+  color: white;
+  border: none;
+  padding: 14px 18px;
+  border-radius: 12px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.cek:hover {
+  background: #15803d;
+}
+
+.iframe-box {
+  width: 100%;
+  height: 430px;
+  background: #e5e7eb;
+  border-radius: 18px;
+  overflow: hidden;
+}
+
+.iframe-box iframe {
+  width: 100%;
+  height: 100%;
+  border: none;
+}
+
+.note {
+  margin-top: 14px;
+  background: #eff6ff;
+  border: 2px dashed #2563eb;
+  padding: 12px;
+  border-radius: 12px;
+  font-size: 14px;
+}
+
+#hasil {
+  background: #fef3c7;
+  padding: 14px;
+  border-radius: 12px;
+}
+
+footer {
+  background: #0f172a;
+  color: white;
+  text-align: center;
+  padding: 15px;
+}
+
+@media (max-width: 1000px) {
+  main {
+    grid-template-columns: 1fr;
+  }
+
+  aside {
+    flex-direction: row;
+    overflow-x: auto;
+  }
+
+  aside button {
+    min-width: 130px;
+    text-align: center;
+  }
+
+  .iframe-box {
+    height: 360px;
+  }
+}

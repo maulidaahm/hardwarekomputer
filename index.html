@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MPI Hardware Komputer</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+  <h1>Media Pembelajaran Interaktif</h1>
+  <p>Hardware Komputer - Informatika Fase F</p>
+</header>
+
+<main>
+  <aside>
+    <button onclick="showPage('petunjuk')">Petunjuk</button>
+    <button onclick="showPage('tujuan')">Tujuan</button>
+    <button onclick="showPage('materi')">Materi</button>
+    <button onclick="showPage('evaluasi')">Evaluasi</button>
+    <button onclick="showPage('profil')">Profil</button>
+  </aside>
+
+  <section class="content">
+    <div id="petunjuk" class="page active">
+      <h2>Petunjuk Penggunaan</h2>
+      <p>1. Pilih menu di sebelah kiri.</p>
+      <p>2. Pelajari materi hardware komputer.</p>
+      <p>3. Amati objek 3D dari Assemblr di sebelah kanan.</p>
+      <p>4. Kerjakan evaluasi dan lihat nilainya.</p>
+    </div>
+
+    <div id="tujuan" class="page">
+      <h2>Tujuan Pembelajaran</h2>
+      <ul>
+        <li>Peserta didik mampu mengenal komponen hardware komputer.</li>
+        <li>Peserta didik mampu membedakan input, proses, output, dan storage.</li>
+        <li>Peserta didik mampu menjelaskan fungsi masing-masing perangkat keras.</li>
+      </ul>
+    </div>
+
+    <div id="materi" class="page">
+      <h2>Materi Hardware Komputer</h2>
+
+      <h3>1. Input Device</h3>
+      <p>Input device adalah perangkat keras untuk memasukkan data ke komputer.</p>
+      <ul>
+        <li>Keyboard</li>
+        <li>Mouse</li>
+        <li>Scanner</li>
+        <li>Webcam</li>
+      </ul>
+
+      <h3>2. Processing Device</h3>
+      <p>Processing device adalah perangkat yang mengolah data.</p>
+      <ul>
+        <li>CPU</li>
+        <li>RAM</li>
+        <li>Motherboard</li>
+      </ul>
+
+      <h3>3. Output Device</h3>
+      <p>Output device adalah perangkat untuk menampilkan hasil proses komputer.</p>
+      <ul>
+        <li>Monitor</li>
+        <li>Printer</li>
+        <li>Speaker</li>
+      </ul>
+
+      <h3>4. Storage Device</h3>
+      <p>Storage device adalah perangkat untuk menyimpan data.</p>
+      <ul>
+        <li>HDD</li>
+        <li>SSD</li>
+        <li>Flashdisk</li>
+      </ul>
+    </div>
+
+    <div id="evaluasi" class="page">
+      <h2>Evaluasi</h2>
+
+      <div class="soal">
+        <p>1. Keyboard termasuk perangkat...</p>
+        <label><input type="radio" name="q1" value="a"> Input</label>
+        <label><input type="radio" name="q1" value="b"> Output</label>
+        <label><input type="radio" name="q1" value="c"> Storage</label>
+      </div>
+
+      <div class="soal">
+        <p>2. Monitor termasuk perangkat...</p>
+        <label><input type="radio" name="q2" value="a"> Input</label>
+        <label><input type="radio" name="q2" value="b"> Output</label>
+        <label><input type="radio" name="q2" value="c"> Processing</label>
+      </div>
+
+      <div class="soal">
+        <p>3. CPU berfungsi untuk...</p>
+        <label><input type="radio" name="q3" value="a"> Mengolah data</label>
+        <label><input type="radio" name="q3" value="b"> Mencetak dokumen</label>
+        <label><input type="radio" name="q3" value="c"> Menampilkan gambar</label>
+      </div>
+
+      <div class="soal">
+        <p>4. SSD termasuk perangkat...</p>
+        <label><input type="radio" name="q4" value="a"> Storage</label>
+        <label><input type="radio" name="q4" value="b"> Output</label>
+        <label><input type="radio" name="q4" value="c"> Input</label>
+      </div>
+
+      <div class="soal">
+        <p>5. RAM digunakan sebagai...</p>
+        <label><input type="radio" name="q5" value="a"> Memori sementara</label>
+        <label><input type="radio" name="q5" value="b"> Alat cetak</label>
+        <label><input type="radio" name="q5" value="c"> Layar komputer</label>
+      </div>
+
+      <button class="cek" onclick="cekNilai()">Cek Nilai</button>
+      <h3 id="hasil"></h3>
+    </div>
+
+    <div id="profil" class="page">
+      <h2>Profil Pengembang</h2>
+      <p>Nama: A. Muhammad Yusuf.</p>
+      <p>Mapel: Informatika</p>
+      <p>Fase: F</p>
+      <p>Judul: Media Pembelajaran Interaktif Hardware Komputer</p>
+    </div>
+  </section>
+
+  <section class="viewer">
+    <h2>Simulasi 3D Assemblr</h2>
+    <p>Putar dan amati objek hardware komputer berikut.</p>
+
+    <div class="iframe-box">
+      <iframe src='https://viewer.assemblrworld.com/Embed/-QWnCSSmVbRaCwyjllEk' allow="camera; microphone; gyroscope; accelerometer; magnetometer; xr-spatial-tracking; fullscreen" allowFullScreen/>
+    </div>
+
+  
+  </section>
+</main>
+
+<footer>
+  <p>© 2026 MPI Hardware Komputer - Informatika Fase F</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
